@@ -11,6 +11,7 @@
     --white--color: #fff;
     --black--color: #000;
     --primary--color: #a86206;
+    --secondary--color: #3b141c;
 
     --font-size--s: 0.9rem;
     --font-size--n: 1rem;
@@ -29,7 +30,7 @@
     --border--radius--30: 30px;
     --border--radius--circle: 50%;
 
-    --site-max-width: 1300px;
+    --site-max-width: 1500px;
 }
 
 /* Styling for whole site */
@@ -59,8 +60,11 @@ img {
 }
 
 /* styling for navbar */
-header {
+#navbarHeader {
     background: var(--black--color);
+    /* position: fixed;
+    z-index: 5;
+    width: 100%; */
 }
 
 .navbar {
@@ -89,4 +93,46 @@ header {
 }
 .nav-link:hover{ 
     background: var(--primary--color);
+}
+.hero-section{
+    min-height: 170vh;
+    background: var(--secondary--color);
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hero-section .section-content{
+    display: flex;
+    min-height: 100%;
+    color: var(--white--color);
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section .title{
+    font-family: "Miniver, sans-serif";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary--color);
+}
+.hero-section .subtitle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(96, 69, 69);
+}
+.hero-section .description{
+    color: rgb(96, 69, 69);
+    padding-bottom: 20px;
+}
+.hero-section.hero-image-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section.hero-image-wrapper img{
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
 }
