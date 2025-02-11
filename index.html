@@ -5,6 +5,7 @@
     <title>Coffee Website</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <body>
     <!-- NAVBAR -->
@@ -14,14 +15,15 @@
                 <h2 class="logo-text">Coffee Website</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Testimonials</a>
@@ -33,12 +35,13 @@
                     <a href="#" class="nav-link">Contacts</a>
                 </li>
             </ul>
-
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
-    <!-- HERO SECTION -->
+
     <main>
-        <section class="hero-section">
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">Best Coffee</h2>
@@ -70,8 +73,62 @@
             </div>
 
         </section>
-    </main>
 
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="assets/about.jpg" alt="About" class="about-image">
+                </div>
+
+                <div class="about-details">
+                    <h2 class="section-title">
+                        About Us
+                    </h2>
+                    <p>
+                        An About Us page is a section on a website that provides information about a company,
+                        organization, or individual. It’s an opportunity to tell your brand’s story, share your vision
+                        or mission, introduce team members, and outline your history and achievements. This is where you
+                        build trust and credibility with customers.
+
+                    </p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- MENU SECTION -->
+         <section class="menu-section" id="menu">
+            <H2 class="menu-title">Our Menu</H2>
+            <div class="section-content">
+                <ul class="menulist">
+                    <li class="menu-item">
+                        <img src="https://th.bing.com/th/id/OIP.CQD5cM22agOUURNOXDQwdwHaE8?rs=1&pid=ImgDetMain" alt="" class="menu-image">
+                    <h3 class="name">Hot IceCream</h3>
+                    <p class="text">Wide range of streaming hot cofee to make you fresh and light.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="https://th.bing.com/th/id/OIP.0tH75S8rGhTK_wMbutnxbAHaHa?rs=1&pid=ImgDetMain" alt="" class="menu-image">
+                    <h3 class="name">Cold IceCream</h3>
+                    <p class="text">Wide range of streaming hot cofee to make you fresh and light.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="https://th.bing.com/th/id/R.14a348302bddc6d3afc5b3733f39cddc?rik=5IjCeU5MNtTupg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmug_coffee%2fmug_coffee_PNG16824.png&ehk=%2fgpsCAPz6QStFZ1rNX%2fbJiH2N5NsZ3Y2H0PHDb4iOg4%3d&risl=&pid=ImgRaw&r=0" alt="" class="menu-image">
+                    <h3 class="name">Hot Coffee</h3>
+                    <p class="text">Wide range of streaming hot cofee to make you fresh and light.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="https://www.pngall.com/wp-content/uploads/4/Bowl-Chips-PNG-Picture.png" alt="" class="menu-image">
+                    <h3 class="name">Hot Snacks</h3>
+                    <p class="text">Wide range of streaming hot cofee to make you fresh and light.</p>
+                    </li>
+                </ul>
+            </div>
+         </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
